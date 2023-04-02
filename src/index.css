@@ -11,3 +11,133 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  min-height: calc(100vh - 64px - 23px);
+  padding: 2rem 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  flex-grow: 1;
+}
+
+.card .card-content {
+  padding: .5rem 1rem;
+}
+
+.card-price {
+  font-size: 1.5rem;
+}
+
+.card .card-action {
+  padding: 1rem 0;
+}
+
+.card-desc {
+  padding-bottom: 1rem;
+}
+
+.cart {
+  position: fixed;
+  cursor: pointer;
+  bottom: 5rem;
+  right: 2rem;
+  z-index: 5;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+@media (min-width: 767px) {
+  .cart {
+    bottom: unset;
+    top: 7rem;
+    font-size: 1rem;
+  }
+}
+
+.modal-all {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  display: flex;
+}
+
+.modal-element {
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  animation: fade-in .5s ease-in-out;
+}
+
+.card-btn {
+  margin-top: 1rem;
+}
+
+td, th {
+  padding: .5rem;
+  text-align: center;
+}
+
+#toast-container {
+  top: 5rem !important;
+  animation: fade-in-out 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  
+  50% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+}
