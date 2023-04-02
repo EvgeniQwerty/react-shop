@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/EvgeniQwerty/react-shop/static/css/main.886d14f3.css",
-    "main.js": "/EvgeniQwerty/react-shop/static/js/main.b3c9fb9a.js",
-    "index.html": "/EvgeniQwerty/react-shop/index.html",
-    "main.886d14f3.css.map": "/EvgeniQwerty/react-shop/static/css/main.886d14f3.css.map",
-    "main.b3c9fb9a.js.map": "/EvgeniQwerty/react-shop/static/js/main.b3c9fb9a.js.map"
+    "main.css": "/react-shop/static/css/main.886d14f3.css",
+    "main.js": "/react-shop/static/js/main.b3c9fb9a.js",
+    "index.html": "/react-shop/index.html",
+    "main.886d14f3.css.map": "/react-shop/static/css/main.886d14f3.css.map",
+    "main.b3c9fb9a.js.map": "/react-shop/static/js/main.b3c9fb9a.js.map"
   },
   "entrypoints": [
     "static/css/main.886d14f3.css",
